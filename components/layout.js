@@ -10,6 +10,7 @@ export const siteTitle = 'James Krehbiels blog'
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
+	
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -25,6 +26,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+	  
       <header className={styles.header}>
         {home ? (
           <>
@@ -60,7 +62,9 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
+	  
       <main>{children}</main>
+	  
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
