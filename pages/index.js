@@ -22,7 +22,10 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>My name is James Krehbiel. I grew up in Laurel Maryland, and went to the University of Maryland where I got my Bachelors in Electrical Engineering. I like to build things and lift heavy objects. Contact me to learn more.</p>
-
+		<p>Email: jkrehbiel@gmail.com</p>
+		<Link href={`https://www.linkedin.com/in/james-krehbiel-43b783118/`}>
+					<a>Linked In profile</a>
+		</Link>
       </section>
 	  <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
@@ -40,7 +43,7 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
 		 <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
+          (This website was built with the aid of the Next.js tutorial{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
