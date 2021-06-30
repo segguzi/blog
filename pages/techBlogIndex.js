@@ -5,7 +5,7 @@ import Date from '../components/date'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 
-const postsDir = 'techblogposts'
+const postsDir = 'tech'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData(postsDir)
@@ -26,7 +26,7 @@ export default function fitHome({ allPostsData }) {
 			<ul className={utilStyles.list}>
 			{allPostsData.map(({ id, date, title }) => (
 				<li className={utilStyles.listItem} key={id}>
-					<Link href={`../techblogposts/${id}`}>
+					<Link href={`/tech/${id}`}>
 						<a>{title}</a>
 					</Link>
 					<br />
