@@ -1,6 +1,6 @@
 ---
 title: 'Spring Boot and Hibernate Course'
-date: '2021-07-06'
+date: '2021-07-08'
 ---
 
 As part of my journey I'll be taking a course on Udemy called [Spring & Hibernate for Beginners](https://www.udemy.com/course/spring-hibernate-tutorial/). <br />
