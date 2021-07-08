@@ -7,7 +7,7 @@ import Link from 'next/link'
 const name = 'James Krehbiel'
 export const siteTitle = 'James Krehbiels blog'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home,fitPost}) {
   return (
     <div className={styles.container}>
 	
@@ -72,6 +72,13 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+	  
+	  {fitPost && (
+		<div style={{ backgroundImage: "url(/gymBackground.png)" }}>
+			Hello World
+		</div>
+	  )}
+	  
     </div>
   )
 }
